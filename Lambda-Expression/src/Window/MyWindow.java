@@ -18,12 +18,19 @@ public class MyWindow {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setVisible(true);
 
-        button.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                System.out.println("Button is clicked");
-                JOptionPane.showMessageDialog(null, "Button is clicked!!");
-            }
+        // <<<<<<<<<<<   Listening events using anonymous class    >>>>>>>>>>>>>>
+//        button.addActionListener(new ActionListener() {
+//            @Override
+//            public void actionPerformed(ActionEvent e) {
+//                System.out.println("Button is clicked");
+//                JOptionPane.showMessageDialog(null, "Button is clicked!!");
+//            }
+//        });
+
+        // <<<<<<<<<<<<<<<<<  Listening events using lambda expression  >>>>>>>>>>>>>>>>>>>>
+        button.addActionListener((e) -> {
+            System.out.println("Button is clicked");
+            JOptionPane.showMessageDialog( null,"Button is clicked");
         });
 
     }
