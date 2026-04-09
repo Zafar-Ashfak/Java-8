@@ -9,21 +9,21 @@ public class Main {
 
 
         // Way 2. Create an anonymous class for implementing interface
-        MyInterface i1 = new InterfaceImpl() {
+        MyInterface m1 = new InterfaceImpl() {
             public void greet() {
                 System.out.println("Hello from anonymous class 1");
             }
         };
 
-        i1.greet();
+        m1.greet();
 
-       MyInterface i2 = new InterfaceImpl() {
+       MyInterface m2 = new InterfaceImpl() {
            public void greet() {
                System.out.println("Hello from anonymous class 2");
            }
        };
 
-       i2.greet();
+       m2.greet();
 
     }
 }
