@@ -26,14 +26,20 @@ public class Main {
 //       m2.greet();
 
        // Way 3. Lambda expression for implementing interface
-        MyInterface l1 = () -> {
-            System.out.println("Hello from lambda implementation");
-        };
+//        MyInterface l1 = () -> {
+//            System.out.println("Hello from lambda implementation");
+//        };
 
-        l1.greet();
+//        l1.greet();
 
 
-        MyInterface l2 = () -> System.out.println("Hello from lambda implementation second time.");
-        l2.greet();
+//        MyInterface l2 = () -> System.out.println("Hello from lambda implementation second time.");
+//        l2.greet();
+
+
+        // **************************************************
+        Addition add = (a, b) -> a + b;
+        System.out.println(add.sum(10, 20));
+        System.out.println(add.sum(20, 20));
     }
 }
