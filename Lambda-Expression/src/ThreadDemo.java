@@ -34,6 +34,8 @@ public class ThreadDemo {
 
         };
 
-        thread2.run();
+        Thread thread22 = new Thread(thread2);
+        thread22.start();
+
     }
 }
