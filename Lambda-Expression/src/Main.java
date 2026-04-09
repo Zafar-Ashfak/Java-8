@@ -41,5 +41,8 @@ public class Main {
         Addition add = (a, b) -> a + b;
         System.out.println(add.sum(10, 20));
         System.out.println(add.sum(20, 20));
+
+        StringLength len = (str) -> str.length();
+        System.out.println("Length of the string is: " + len.getLength("Md Ashfaq Alam"));
     }
 }
