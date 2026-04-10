@@ -10,13 +10,19 @@ public class MyWindow {
         JFrame frame = new JFrame("My Window");
 
         // create button and add on the window
+//        JButton button = new JButton("Click Me");
+//        button.addActionListener(new ActionListener() {
+//            @Override
+//            public void actionPerformed(ActionEvent e) {
+//                System.out.println("Button is clicked");
+//                JOptionPane.showMessageDialog(null,"Button is clicked");
+//            }
+//        });
+
         JButton button = new JButton("Click Me");
-        button.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                System.out.println("Button is clicked");
-                JOptionPane.showMessageDialog(null,"Button is clicked");
-            }
+        button.addActionListener(e -> {
+            System.out.println("Button is clicked!!!");
+            JOptionPane.showMessageDialog(null,"Button is clicked!!!");
         });
 
         frame.add(button);
