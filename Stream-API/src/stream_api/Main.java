@@ -21,18 +21,18 @@ public class Main {
         list3.add(5);
 
         // Add filtered element in the list without using Stream API
-        List<Integer> evenList = new ArrayList<>();
+        List<Integer> evenList1 = new ArrayList<>();
         for (Integer i : list1) {
             if (i % 2 == 0) {
-                evenList.add(i);
+                evenList1.add(i);
             }
         }
 
-        System.out.println(evenList);
+        System.out.println(evenList1);
 
         // Add filtered element in the list using Stream API
-        List<Integer> newList = list1.stream().filter(e -> e % 2 == 0).toList();
-        System.out.println(newList);
+        List<Integer> evenList2 = list1.stream().filter(e -> e % 2 == 0).toList();
+        System.out.println(evenList2);
     }
 
 
