@@ -4,9 +4,8 @@ package stream_api;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Collectors;
 
-public class Main {
+public class StreamMain {
     public static void main(String[] args) {
         List<Integer> list1 = List.of(2, 5, 7, 4, 6, 11, 12, 15, 19, 18, 20, 14, 17);
 
