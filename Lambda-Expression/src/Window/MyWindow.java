@@ -10,6 +10,7 @@ public class MyWindow {
         JFrame frame = new JFrame("My Window");
 
         // create button and add on the window
+
 //        JButton button = new JButton("Click Me");
 //        button.addActionListener(new ActionListener() {
 //            @Override
@@ -21,6 +22,7 @@ public class MyWindow {
 
         JButton button = new JButton("Click Me");
         button.addActionListener(e -> {
+//            System.out.println(e);
             System.out.println("Button is clicked!!!");
             JOptionPane.showMessageDialog(null,"Button is clicked!!!");
         });
