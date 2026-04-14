@@ -7,10 +7,14 @@ import java.util.List;
 
 public class StreamMain {
     public static void main(String[] args) {
+
+        // Creating a List of integers
         List<Integer> list1 = List.of(2, 5, 7, 4, 6, 11, 12, 15, 19, 18, 20, 14, 17);
 
+        // Creating a ArrayList of integers asList
         List<Integer> list2 = Arrays.asList(11, 14, 12, 19, 4, 2, 3, 6, 17, 15, 21, 26);
 
+        // Creating a ArrayList of integers
         List<Integer> list3 = new ArrayList<>();
         list3.add(2);
         list3.add(7);
