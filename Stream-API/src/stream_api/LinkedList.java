@@ -174,7 +174,7 @@ public class LinkedList {
     public void printLinkedList() {
         Node temp = head;
         while (temp != null) {
-            System.out.print(STR."\{temp.data} -> ");
+            System.out.print(temp.data + " - > ");
             temp = temp.next;
         }
         System.out.println("null");
@@ -193,7 +193,7 @@ public class LinkedList {
         if (idx == -1) {
             System.out.println("Key not found");
         } else {
-            System.out.println(STR."Key is at index: \{idx}");
+            System.out.println("Key found at index: " + idx);
         }
 
     }
