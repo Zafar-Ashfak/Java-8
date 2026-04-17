@@ -1,4 +1,4 @@
-package LinkedList;
+package stream_api;
 
 public class LinkedList1 {
     public static class Node {
