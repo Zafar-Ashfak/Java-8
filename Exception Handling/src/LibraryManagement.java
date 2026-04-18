@@ -27,7 +27,7 @@ class Libary {
     }
 }
 
-public class LibaryManagement {
+public class LibraryManagement {
     public static void main(String[] args) {
         Libary libary = new Libary();
         libary.borrowBook(161);
