@@ -19,9 +19,9 @@ public class Main {
 
         int[] arr = {2, 6, 9, 14};
         try {
-            System.out.println(arr[9]);
-        } catch (Exception e) {
-            e.printStackTrace();
+            System.out.println(arr[5]);
+        } catch (IndexOutOfBoundsException e) {
+            System.out.println("Exception");
         }
 
         System.out.println("Outside try-catch block");
