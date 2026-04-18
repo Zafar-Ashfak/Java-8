@@ -1,4 +1,4 @@
-class Libary {
+class Library {
     int[] books = { 101, 102, 103, 104, 105};
 
     public void borrowBook(int bookId) {
@@ -29,7 +29,7 @@ class Libary {
 
 public class LibraryManagement {
     public static void main(String[] args) {
-        Libary libary = new Libary();
-        libary.borrowBook(161);
+        Library library = new Library();
+        library.borrowBook(161);
     }
 }
