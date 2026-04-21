@@ -14,11 +14,4 @@ public class ThreadOne implements Runnable {
             }
         }
     }
-
-    static void main() {
-        ThreadOne t1 = new ThreadOne();
-
-        Thread th = new Thread(t1);
-        th.start();
-    }
 }
