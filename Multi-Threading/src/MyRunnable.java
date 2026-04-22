@@ -1,11 +1,12 @@
 // Creating thread using Runnable Interface
 
-public class ThreadOne implements Runnable {
+public class MyRunnable implements Runnable {
 
     @Override
     public void run() {
-        // Task
-        for (int i = 1; i <= 10; i++) {
+        System.out.println("Thread starts...");
+
+        for (int i = 0; i <= 10; i++) {
             System.out.print(i + " ");
             try {
                 Thread.sleep(1000);
@@ -13,5 +14,7 @@ public class ThreadOne implements Runnable {
                 throw new RuntimeException(e);
             }
         }
+
+        System.out.println("\nThread ends!!");
     }
 }
