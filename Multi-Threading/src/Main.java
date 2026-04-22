@@ -1,12 +1,12 @@
 public class Main {
     static void main() {
         // Run the thread using Runnable interface
-        MyRunnable t1 = new MyRunnable();
-        Thread thr = new Thread(t1);
-        thr.start();
+//        MyRunnable t1 = new MyRunnable();
+//        Thread thr = new Thread(t1);
+//        thr.start();
 
         // Run the thread using Thread class
-//        ThreadTwo t2 = new ThreadTwo();
-//        t2.start();
+        MyThread t2 = new MyThread();
+        t2.start();
     }
 }
