@@ -1,6 +1,5 @@
 package stream_api;
 
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -40,8 +39,4 @@ public class StreamMain {
         List<Integer> greaterThan15 = list2.stream().filter(i -> i > 15).toList();
         System.out.println(greaterThan15);
     }
-
-
-
-
 }
