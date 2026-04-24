@@ -11,8 +11,13 @@ public class StreamMethods {
         // 1. Filter Method
         List<Integer> filteredList = list1.stream().filter(e -> e > 3 && e < 13).toList();
 
-        System.out.println(filteredList);
+//        System.out.println(filteredList);
 
+        List<Integer> list2 = List.of(25, 16, 81, 100, 9, 144);
+
+        list2.stream()
+                .map(n -> (int) Math.sqrt(n))
+                .forEach(System.out::println);
 
 
 
